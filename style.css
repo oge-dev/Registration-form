@@ -1,67 +1,79 @@
-       body{
-            background: #f2f6ff;
-        }
-        form {
-            margin-bottom: 3px;
-            text-align: center;
-            border: 1px solid #ccc;
-        }
-        #header {
-            background: white;
-            font-size: 32px;
-            padding-top: 56px;
-            Padding-Bottom: 32px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        .social-icon {
-            height: 50px;
-            width: 50px;
-            Padding-Top: 16px;
-            Padding-Bottom: 16px;
-            Padding-left: 32px;
-            Padding-right: 32px;
-        }
-        .form-group {
-            Padding-Top: 80px;
-            Padding-Bottom: 40px;
-            Padding-left: 80px;
-            Padding-right: 80px;
-            background: white;
-        }
-        .form-group input {
-            font-size: 14px;
-            Padding-bottom: 12px;
-            margin-bottom: 36px;
-            border-left: 0;
-            border-top: 0;
-            border-right: 0;
-            border-bottom: 1px solid #ccc;
-        }
-        .Register {
-            margin-top: 0;
-            Padding-Bottom: 50px;
-            background: white;
-        }
-        button {
-            background: #0056ff;
-            Padding-Top: 12px;
-            Padding-Bottom: 12px;
-            Padding-left: 24px;
-            Padding-right: 24px;
-            font-size: 14px;
-            Color: white;
-            border: None;
-        }
-        footer {
-            margin: 0;
-            background: black;
-        }
-        .copywrite {
-            Padding-left: 2px;
-            Padding-Top: 10px;
-            Padding-Bottom: 10px;
-            font: 12px normal arial;
-            color: white;
-            line-height: 15px;
-        }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f2f6ff;
+  max-width: 100%;
+}
+main {
+  width: 97%;
+  margin: 0 auto;
+}
+form {
+  margin: 4px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+#header {
+  background: white;
+  font-size: 32px;
+  padding: 56px 0 32px;
+  margin: 0;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  padding: 16px 32px;
+}
+.form-group {
+  padding: 80px 0px 40px;
+  background: white;
+}
+.form-group input {
+  font-size: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 36px;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.form-group input:hover {
+  border-bottom: 1px solid #0056ff;
+}
+.Register-btn {
+  padding-bottom: 50px;
+  background: white;
+}
+button {
+  background: #0056ff;
+  padding: 12px 24px;
+  font-size: 14px;
+  color: white;
+  border: None;
+  border-radius: 4px;
+}
+button:hover {
+  text-decoration: underline;
+}
+footer {
+  background: black;
+  width: 100%;
+}
+.copywrite {
+  padding: 10px 0;
+  font-size: 12px;
+  color: white;
+  width: 98%;
+  margin: 0 auto;
+  line-height: 15px;
+}
+@media (min-width: 1199px) {
+  form {
+    margin: 10px 0;
+  }
+  main {
+    width: 60%;
+  }
+}
